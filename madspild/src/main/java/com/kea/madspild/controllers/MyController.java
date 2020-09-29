@@ -11,13 +11,20 @@ public class MyController {
         return "index";
     }
 
-    @GetMapping("/contactus")
-    public String contactus() {
-        return "contactus";
+    @GetMapping("/goderaad")
+    public String godeRaad() {
+        return "goderaad";
     }
 
-    @GetMapping("/info")
-    public String info() {
-        return "info";
+    @GetMapping("/medlemskab")
+    public String medlemskab() {
+        return "medlemskab";
     }
+
+    @GetMapping("/kontakt")
+    public String kontakt() {
+        return "kontakt";
+    }
+
+
 }
