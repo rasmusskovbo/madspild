@@ -1,21 +1,19 @@
-
 /* Alt */
 *{
     margin: 0;
     padding: 0;
-    font-family: "Arial Black", serif;
+    font-family: "Arial Black";
 }
 
 /* Body only */
 body {
     text-align: center;
-    height: auto;
-    overflow-y: scroll;
+    height: 1500px;
 }
 
 /* Wrapper class */
 .wrapper {
-    width: 100%;
+    width: 1000px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -48,20 +46,19 @@ header {
 nav {
     float: right;
     line-height: 100px;
-    margin-right: 20px;
 }
 
 /* Specifikt for links */
 nav a {
     text-decoration: none;
     letter-spacing: 2px;
-    font-size: 1.5vw;
+    font-size: 18px;
     color: white;
 }
 
 /* Farve ved hover */
 nav a:hover {
-    color: forestgreen;
+    color: seagreen;
 }
 
 /* Hvide dividers */
@@ -77,18 +74,19 @@ nav a:hover {
     height: 100%;
     position: fixed;
     top: 100px;
-    background-image: url("images/shoppingbag.jpg");
+    background-image: url("shoppingbag.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     margin: auto;
 }
-
 .banner-area h2 {
     padding-top: 4%;
-    font-size: 5.4vw;
+    font-size: 70px;
     color: white;
     text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: seagreen;
 }
 
 
@@ -96,30 +94,47 @@ nav a:hover {
 .content-area {
     color: mediumseagreen;
     width: 100%;
-    position: relative;;
+    position: relative;
     top: 500px;
     background: white;
     height: 500px;
 }
 
 .content-area h2 {
-    color: mediumseagreen;
+    color: seagreen;
     letter-spacing: 4px;
     padding-top: 30px;
-    font-size: 3vw;
+    font-size: 40px;
     margin: 0;
 }
 
 .content-area p {
     padding: 2% 0;
-    font-family: Arial, serif;
-    line-height: 2.5vw;
-    font-size: 2vw;
+    font-family: Arial;
+    line-height: 30px;
 }
 
-.content-area h3 {
-    font-size: 40px;
-    padding: 30px;
+.boxes {
+    font-family: Arial;
+    line-height: 20px;
+}
+
+.left-box {
+    width: 50%;
+    float: left;
+}
+
+.assistant-right-box {
+    padding: 2% 0;
+    width: 20%;
+    float: left;
+}
+
+.right-box {
+    alignment: left;
+    padding: 2% 0;
+    width: 30%;
+    float: right;
 }
 
 /* Blank space mellem content area */
@@ -128,54 +143,9 @@ nav a:hover {
     height: 375px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-label {
-    padding: 12px 0 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    position: center;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.overskrift {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.tekstboks {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.række:after {
-    content: "";
-    display: table;
-    clear: both;
+h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 .footer {
@@ -192,8 +162,7 @@ input[type=submit]:hover {
 
 .footer p {
     color: white;
-    font-size: 1vw;
-    letter-spacing: 1px;
-
+    font-size: 12px;
+    font-spacing: 1px;
 }
 

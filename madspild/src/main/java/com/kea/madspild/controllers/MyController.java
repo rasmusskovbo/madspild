@@ -1,5 +1,7 @@
 package com.kea.madspild.controllers;
 
+import com.kea.madspild.models.Contact;
+import com.kea.madspild.models.Contacts;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MyController {
+    private Contacts contacts = new Contacts();
 
     @GetMapping("/")
     public String index() {
@@ -26,14 +29,20 @@ public class MyController {
 
     @GetMapping("/kontakt")
     public String kontakt() {
-        return "kontaktOs";
+        return "kontakt";
     }
 
-    @PostMapping("/kontaktResult")
-    public String kontaktResult(@RequestParam String fuldeNavn, @RequestParam String email,
-                                @RequestParam String besked, Model model) {
-        return "beskedIndsendt";
+    // mangler OK "message"
+    // evt impl permanence -> evt skriv til fil
+    // evt error handling hvis input ikke følger visse krav (regex)
+    @PostMapping("/newcontact")
+    public String createContact(@RequestParam String name, @RequestParam String company, @RequestParam String email, @RequestParam String msg, Model model) {
+        contacts.add(new Contact(name, company, email, msg));
+        model.addAttribute("name", name);
+        model.addAttribute("company", company);
+        model.addAttribute("email", email);
+        model.addAttribute("msg", msg);
+        return "beskedindsendt"; //find ud af hvad der skal ske ved ok
     }
-
 
 }

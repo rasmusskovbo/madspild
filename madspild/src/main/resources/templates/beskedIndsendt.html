@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -12,7 +12,7 @@
         <div class="wrapper">
             <div class="logo">
                 <a href="/">
-                    <img src="images/dmm.JPG" alt="Page Logo" style="max-width: 130%; min-height: 150%">
+                    <img src="dmm.JPG" alt="Page Logo" style="max-width: 130%; min-height: 150%">
                 </a>
             </div>
             <nav>
@@ -32,7 +32,7 @@
 
 <div class="banner-area">
     <div class="wrapper">
-        <h2>Vi er Danmark mod Madspild</h2>
+        <h2>BLIV MEDLEM</h2>
     </div>
 </div>
 <div class="white-bar"></div>
@@ -40,8 +40,19 @@
 </div>
 <div class="content-area">
     <div class="wrapper">
-        <h2>Tak for din henvendelse</h2>
-        <p>Vi har modtaget din besked og vi vender tilbage hurtigst muligt.</p>
+        <h2>Tak for din henvendelse!</h2>
+        <p>Vi har modtaget din besked og vi vender tilbage hurtigst muligt.<br>Vi har registreret følgende info:</p>
+        <div>
+            <h4>
+            Navn: <a th:text="${name}"/>
+            <br>
+            Firma: <a th:text="${company}"/>
+            <br>
+            E-mail: <a th:text="${email}"/>
+            <br>
+            Besked: <a th:text="${msg}"/>
+        </h4>
+        </div>
     </div>
 </div>
 <div class="noncontent-area-mid">
