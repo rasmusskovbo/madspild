@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="primarystyle.css">
+</head>
+<body>
+
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/dmm.JPG" alt="Page Logo" style="max-width: 130%; min-height: 150%">
+                </a>
+            </div>
+            <nav>
+                <div class="dividers">
+                    <a href="/">Forside</a>
+                    |
+                    <a href="/goderaad">Gode Råd</a>
+                    |
+                    <a href="/medlemskab">Bliv Medlem</a>
+                    |
+                    <a href="/kontakt">Kontakt os</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div class="banner-area">
+    <div class="wrapper">
+        <h2>Vi er Danmark mod Madspild</h2>
+    </div>
+</div>
+<div class="white-bar"></div>
+
+<div class="content-area">
+    <div class="wrapper">
+        <h3>Kontakt os</h3>
+         <form action="/kontaktResult" method="post">
+             <div class="række">
+                 <div class="overskrift">
+                     <label for="fnavn">Fulde navn</label>
+                 </div>
+                 <div class="tekstboks">
+                     <input type="text" id="fnavn" name="fuldeNavn" placeholder="Dit fulde navn..">
+                 </div>
+             </div>
+             <div class="række">
+                 <div class="overskrift">
+                     <label for="email">E-mail</label>
+                 </div>
+                 <div class="tekstboks">
+                     <input type="text" id="email" name="email" placeholder="Din e-mail adresse..">
+                 </div>
+             </div>
+             <div class="række">
+                 <div class="overskrift">
+                     <label for="besked">Besked</label>
+                 </div>
+                 <div class="tekstboks">
+                     <textarea id="besked" name="besked" placeholder="Indtast besked..." style="height:100px"></textarea>
+                 </div>
+             </div>
+             <div class="række">
+                 <input type="submit" onclick="return confirm('Send besked?')" value="Send">
+             </div>
+         </form>
+    </div>
+</div>
+<div class="noncontent-area-mid"></div>
+
+<div class="footer">
+    <p> DANMARK MOD MADSPILD • LYGTEN 37, 2400 KØBENHAVN NV• E-MAIL: INFO@DANMARKMODMADSPILD.DK </p>
+</div>
+
+</body>
+</html>

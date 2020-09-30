@@ -1,19 +1,21 @@
+
 /* Alt */
 *{
     margin: 0;
     padding: 0;
-    font-family: "Arial Black";
+    font-family: "Arial Black", serif;
 }
 
 /* Body only */
 body {
     text-align: center;
-    height: 1500px;
+    height: auto;
+    overflow-y: scroll;
 }
 
 /* Wrapper class */
 .wrapper {
-    width: 1000px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -46,13 +48,14 @@ header {
 nav {
     float: right;
     line-height: 100px;
+    margin-right: 20px;
 }
 
 /* Specifikt for links */
 nav a {
     text-decoration: none;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 1.5vw;
     color: white;
 }
 
@@ -74,15 +77,16 @@ nav a:hover {
     height: 100%;
     position: fixed;
     top: 100px;
-    background-image: url("shoppingbag.jpg");
+    background-image: url("images/shoppingbag.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     margin: auto;
 }
+
 .banner-area h2 {
     padding-top: 4%;
-    font-size: 70px;
+    font-size: 5.4vw;
     color: white;
     text-transform: uppercase;
 }
@@ -102,20 +106,76 @@ nav a:hover {
     color: mediumseagreen;
     letter-spacing: 4px;
     padding-top: 30px;
-    font-size: 40px;
+    font-size: 3vw;
     margin: 0;
 }
 
 .content-area p {
     padding: 2% 0;
-    font-family: Arial;
-    line-height: 30px;
+    font-family: Arial, serif;
+    line-height: 2.5vw;
+    font-size: 2vw;
+}
+
+.content-area h3 {
+    font-size: 40px;
+    padding: 30px;
 }
 
 /* Blank space mellem content area */
 .noncontent-area-mid {
     width: 100%;
     height: 375px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 0 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.overskrift {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.tekstboks {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.række:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .footer {
@@ -132,7 +192,8 @@ nav a:hover {
 
 .footer p {
     color: white;
-    font-size: 12px;
-    font-spacing: 1px;
+    font-size: 1vw;
+    letter-spacing: 1px;
+
 }
 

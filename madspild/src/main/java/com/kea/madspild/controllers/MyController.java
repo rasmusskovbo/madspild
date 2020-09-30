@@ -1,7 +1,10 @@
 package com.kea.madspild.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MyController {
@@ -23,7 +26,13 @@ public class MyController {
 
     @GetMapping("/kontakt")
     public String kontakt() {
-        return "kontakt";
+        return "kontaktOs";
+    }
+
+    @PostMapping("/kontaktResult")
+    public String kontaktResult(@RequestParam String fuldeNavn, @RequestParam String email,
+                                @RequestParam String besked, Model model) {
+        return "beskedIndsendt";
     }
 
 
