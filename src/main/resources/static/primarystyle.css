@@ -1,0 +1,168 @@
+/* Alt */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Black";
+}
+
+/* Body only */
+body {
+    text-align: center;
+    height: 1500px;
+}
+
+/* Wrapper class */
+.wrapper {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Menu bar */
+header {
+    height: 100px;
+    background: mediumseagreen;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+/* white bar under header */
+.white-bar {
+    top: 100px;
+    width: 100%;
+    position: fixed;
+    background: white;
+    height: 40px;
+}
+
+/*logo img settings */
+.logo {
+    width: 25%;
+    height: 100px;
+    float: left;
+}
+
+/* Navigation menu */
+nav {
+    float: right;
+    line-height: 100px;
+}
+
+/* Specifikt for links */
+nav a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Farve ved hover */
+nav a:hover {
+    color: seagreen;
+}
+
+/* Hvide dividers */
+.dividers {
+    color: white;
+    font-size: 20px;
+}
+
+/* Background image */
+.banner-area {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 100px;
+    background-image: url("shoppingbag.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.banner-area h2 {
+    padding-top: 4%;
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: seagreen;
+}
+
+
+/* text område */
+.content-area {
+    color: mediumseagreen;
+    width: 100%;
+    position: relative;
+    top: 500px;
+    background: white;
+    height: 500px;
+}
+
+.content-area h2 {
+    color: seagreen;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.content-area p {
+    padding: 2% 0;
+    font-family: Arial;
+    line-height: 30px;
+}
+
+.boxes {
+    font-family: Arial;
+    line-height: 20px;
+}
+
+.left-box {
+    width: 50%;
+    float: left;
+}
+
+.assistant-right-box {
+    padding: 2% 0;
+    width: 20%;
+    float: left;
+}
+
+.right-box {
+    alignment: left;
+    padding: 2% 0;
+    width: 30%;
+    float: right;
+}
+
+/* Blank space mellem content area */
+.noncontent-area-mid {
+    width: 100%;
+    height: 375px;
+}
+
+h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    position: fixed;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+    background-color: mediumseagreen;
+}
+
+.footer p {
+    color: white;
+    font-size: 12px;
+    font-spacing: 1px;
+}
+

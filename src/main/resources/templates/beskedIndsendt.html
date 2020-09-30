@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="primarystyle.css">
+</head>
+<body>
+
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/">
+                    <img src="dmm.JPG" alt="Page Logo" style="max-width: 130%; min-height: 150%">
+                </a>
+            </div>
+            <nav>
+                <div class="dividers">
+                    <a href="/">Forside</a>
+                    |
+                    <a href="/goderaad">Gode Råd</a>
+                    |
+                    <a href="/medlemskab">Bliv Medlem</a>
+                    |
+                    <a href="/kontakt">Kontakt os</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div class="banner-area">
+    <div class="wrapper">
+        <h2>BLIV MEDLEM</h2>
+    </div>
+</div>
+<div class="white-bar"></div>
+
+</div>
+<div class="content-area">
+    <div class="wrapper">
+        <h2>Tak for din henvendelse!</h2>
+        <p>Vi har modtaget din besked og vi vender tilbage hurtigst muligt.<br>Vi har registreret følgende info:</p>
+        <div>
+            <h4>
+            Navn: <a th:text="${name}"/>
+            <br>
+            Firma: <a th:text="${company}"/>
+            <br>
+            E-mail: <a th:text="${email}"/>
+            <br>
+            Besked: <a th:text="${msg}"/>
+        </h4>
+        </div>
+    </div>
+</div>
+<div class="noncontent-area-mid">
+
+</div>
+
+<div class="footer">
+    <p> DANMARK MOD MADSPILD • LYGTEN 37, 2400 KØBENHAVN NV• E-MAIL: INFO@DANMARKMODMADSPILD.DK </p>
+</div>
+</body>
+</html>
