@@ -32,7 +32,7 @@ public class MyController {
         return "kontakt";
     }
 
-    // mangler OK "message"
+    // dynamisk OK meddelelse (uden ny html side)
     // evt impl permanence -> evt skriv til fil
     // evt error handling hvis input ikke følger visse krav (regex)
     @PostMapping("/newcontact")
@@ -42,7 +42,7 @@ public class MyController {
         model.addAttribute("company", company);
         model.addAttribute("email", email);
         model.addAttribute("msg", msg);
-        return "beskedindsendt"; //find ud af hvad der skal ske ved ok
+        return "beskedindsendt";
     }
 
 }
