@@ -1,7 +1,7 @@
 package com.kea.madspild.controllers;
 
 import com.kea.madspild.models.Contact;
-import com.kea.madspild.models.Contacts;
+import com.kea.madspild.models.ContactList;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,39 +10,47 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MyController {
-    private Contacts contacts = new Contacts();
 
     @GetMapping("/")
-    public String index() {
-        return "index";
+    public String forside() {
+        return "forside";
     }
 
-    @GetMapping("/goderaad")
-    public String godeRaad() {
-        return "goderaad";
+    @GetMapping("/godeRaad")
+    public String godeRaad(){
+        return "godeRaad";
     }
 
-    @GetMapping("/medlemskab")
-    public String medlemskab() {
-        return "medlemskab";
+    @GetMapping("/blivMedlem")
+    public String blivMedlem() {
+        return "blivMedlem";
     }
 
-    @GetMapping("/kontakt")
-    public String kontakt() {
-        return "kontakt";
+    @GetMapping("/kontaktOs")
+    public String kontaktOs() {
+        return "kontaktOs";
     }
 
-    // dynamisk OK meddelelse (uden ny html side)
-    // evt impl permanence -> evt skriv til fil
-    // evt error handling hvis input ikke følger visse krav (regex)
-    @PostMapping("/newcontact")
+    @GetMapping("/medlemskabInfo")
+    public String medlemskabInfo() {
+        return "popup-window";
+    }
+
+    @PostMapping("/beskedIndsendt")
+    public String besked(@RequestParam String email, Model model) {
+        model.addAttribute("email", email);
+        return "beskedIndsendt";
+    }
+
+    @PostMapping("/medlemskabIndsendt")
     public String createContact(@RequestParam String name, @RequestParam String company, @RequestParam String email, @RequestParam String msg, Model model) {
-        contacts.add(new Contact(name, company, email, msg));
+        ContactList contactList = new ContactList();
+        contactList.add(new Contact(name, company, email, msg));
         model.addAttribute("name", name);
         model.addAttribute("company", company);
         model.addAttribute("email", email);
         model.addAttribute("msg", msg);
-        return "beskedindsendt";
+        return "medlemskabIndsendt";
     }
 
 }

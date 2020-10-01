@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Anmodning om Medlemskab</title>
+    <link rel="stylesheet" href="popupwindowstyle.css">
+</head>
+<body>
+
+<div class="række">
+    <h1>Tak for henvendelsen</h1>
+    <p style="color: mediumseagreen">Vi har modtaget din anmodning og har registreret følgende info:</p>
+    <div>
+        <div class="række">
+            <h2>Navn<br></h2> <a th:text="${name}"></a>
+        </div>
+        <div class="række">
+            <h2>Firma<br></h2><a th:text="${company}"></a>
+        </div>
+        <div class="række">
+            <h2>E-mail<br></h2><a th:text="${email}"></a>
+        </div>
+        <div class="række">
+            <h2>Besked </h2><a th:text="${msg}"></a>
+        </div>
+        <div class="række">
+            <input type="submit" onclick="window.close()" value="Afslut">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

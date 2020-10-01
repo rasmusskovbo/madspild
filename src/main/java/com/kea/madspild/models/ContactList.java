@@ -1,22 +1,22 @@
 package com.kea.madspild.models;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Contacts {
-    private ArrayList<Contact> contacts = new ArrayList<>();
+public class ContactList {
+
+    private ArrayList<com.kea.madspild.models.Contact> contacts = new ArrayList<>();
     private static int counter = 0;
 
-    public void add(Contact contact) {
+    public void add(com.kea.madspild.models.Contact contact) {
         counter++;
         contacts.add(contact);
     }
 
-    public void remove(Contact contact) {
+    public void remove(com.kea.madspild.models.Contact contact) {
         contacts.remove(contact);
     }
 
-    public Contact get(int index) {
+    public com.kea.madspild.models.Contact get(int index) {
         return contacts.get(index);
 
     }
@@ -27,13 +27,12 @@ public class Contacts {
                 '}';
     }
 
-    public ArrayList<Contact> getContacts() {
+    public ArrayList<com.kea.madspild.models.Contact> getContacts() {
         return contacts;
     }
 
-    public void setContacts(ArrayList<Contact> contacts) {
+    public void setContacts(ArrayList<com.kea.madspild.models.Contact> contacts) {
         this.contacts = contacts;
     }
 
-    // Evt. show/display/print/retrieve/savetofile (permanence)
 }

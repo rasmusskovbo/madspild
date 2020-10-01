@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt os</title>
+    <link rel="stylesheet" href="primarystyle.css">
+</head>
+<body>
+
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.JPG" alt="Forside" style="max-width: 130%; min-height: 150%">
+                </a>
+            </div>
+            <nav>
+                <div class="dividers">
+                    <a href="/">Forside</a>
+                    |
+                    <a href="/godeRaad">Gode Råd</a>
+                    |
+                    <a href="/blivMedlem">Bliv Medlem</a>
+                    |
+                    <a href="/kontaktOs">Kontakt os</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="banner-area">
+        <div class="wrapper">
+            <h2>Vi er Danmark mod Madspild</h2>
+        </div>
+    </div>
+    <div class="white-bar"></div>
+</div>
+
+<div class="content-area">
+    <div class="wrapper">
+        <h3>Kontakt os</h3>
+        <div class="contact-info">
+            <h2>Adresse<br></h2><p>lygten 37, 2400 København NV</p>
+            <h2>Telefon<br></h2><p>+45 46 46 07 00</p>
+            <h2>E-mail<br></h2><p>Info@danmarkmodmadspild.dk</p>
+        </div>
+        <form action="/beskedIndsendt" method="post">
+            <div class="række">
+                <div class="overskrift">
+                    <label for="fnavn">Fulde navn</label>
+                </div>
+                <div class="tekstboks">
+                    <input type="text" id="fnavn" name="fuldeNavn" placeholder="Dit fulde navn.." required>
+                </div>
+            </div>
+
+            <div class="række">
+                <div class="overskrift">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="tekstboks">
+                    <input type="email" id="email" name="email" placeholder="Din e-mail adresse.." required>
+                </div>
+            </div>
+            <div class="række">
+                <div class="overskrift">
+                    <label for="besked">Besked</label>
+                </div>
+                <div class="tekstboks">
+                    <textarea id="besked" name="besked" placeholder="Indtast besked..." style="max-height:90px" required></textarea>
+                </div>
+            </div>
+            <div class="række">
+                <input type="submit" onclick="return confirm('Send besked?')" value="Send">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <p> DANMARK MOD MADSPILD • LYGTEN 37, 2400 KØBENHAVN NV• E-MAIL: INFO@DANMARKMODMADSPILD.DK • TLF: +45 46 46 07 00 </p>
+</div>
+</body>
+</html>

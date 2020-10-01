@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Indsendt Besked</title>
+    <title>Bliv Medlem</title>
     <link rel="stylesheet" href="primarystyle.css">
 </head>
 <body>
@@ -36,17 +36,25 @@
     <div class="white-bar"></div>
 </div>
 
-</div>
 <div class="content-area">
     <div class="wrapper">
-        <h2>Tak for henvendelsen</h2>
-        <p style="text-align: center">Vi har modtaget din besked og du vil få et svar tilbage på <a th:text="${email}"></a> hurtigst muligt. </p>
+        <h3>Deltag i kampen mod madspild</h3>
+        <p>DANMARK MOD MADSPILD henvender sig til alle virksomheder med en fødevareproduktion, f.eks. restauranter, hoteller, storkøkkener, institutioner osv. Som medlem af foreningen kan I vise jeres kunder og samarbejdspartnere, at jeres virksomhed tænker bæredygtighed og gør en forskel.</p>
+        <div class="række">
+            <input type="submit" onclick="myFunction()" value="Bliv Medlem">
+        </div>
     </div>
-</div>
 </div>
 
 <div class="footer">
     <p> DANMARK MOD MADSPILD • LYGTEN 37, 2400 KØBENHAVN NV• E-MAIL: INFO@DANMARKMODMADSPILD.DK • TLF: +45 46 46 07 00 </p>
 </div>
+
+<script>
+    function myFunction() {
+        window.open("/medlemskabInfo", width=550, height=170, left=150, top=200, toolbar=0, status=0);
+    }
+</script>
+
 </body>
 </html>

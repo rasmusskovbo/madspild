@@ -1,10 +1,5 @@
 package com.kea.madspild.controllers;
 
-import com.kea.madspild.models.Contacts;
-import org.junit.jupiter.api.Test;
-import org.thymeleaf.model.IModel;
-
-import static org.junit.jupiter.api.Assertions.*;
 /*
 class MyControllerTest {
 

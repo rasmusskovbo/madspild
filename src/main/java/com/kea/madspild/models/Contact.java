@@ -1,6 +1,7 @@
 package com.kea.madspild.models;
 
 public class Contact {
+
     private String name;
     private String company;
     private String email;
@@ -54,4 +55,5 @@ public class Contact {
                 ", msg='" + msg + '\'' +
                 '}';
     }
+
 }

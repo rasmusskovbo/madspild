@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Black", serif;
+}
+
+body {
+    text-align: center;
+    height: auto;
+    overflow-y: scroll;
+}
+
+input[type=text], select, textarea, input[type=email] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.overskrift {
+    color: mediumseagreen;
+    margin-top: 30px;
+}
+
+.tekstboks {
+    margin-top: 6px;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 10px;
+    color: mediumseagreen;
+}
+
+p, a{
+    color: forestgreen;
+    overflow-wrap: break-word;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.række {
+    padding: 10px 15px 10px 15px;
+    position: center;
+}
+
+h2 {
+    text-decoration: underline;
+    color: mediumseagreen;
+    padding: 15px;
+}
