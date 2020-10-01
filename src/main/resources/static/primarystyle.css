@@ -86,13 +86,14 @@ nav a:hover {
     position: relative;
     top: 500px;
     background: white;
-    height: 400px;
+    height: 100%;
+    padding: 30px 0px;
 }
 
 .content-area h2 {
     color: mediumseagreen;
     letter-spacing: 4px;
-    padding-top: 30px;
+
     font-size: 3vw;
     margin: 0;
 }
@@ -205,4 +206,23 @@ input[type=submit]:hover {
     color: white;
     font-size: 1vw;
     letter-spacing: 1px;
+}
+
+.advice-header {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    font-weight: normal;
+
+}
+
+.advice-list {
+    text-align: left;
+    padding: 0px 50px;
+    margin: auto;
+    width: 80%;
+
+}
+
+.advice-list li {
+    padding: 7px 0px;
 }
