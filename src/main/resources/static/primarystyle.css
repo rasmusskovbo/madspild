@@ -38,6 +38,44 @@ header {
     float: left;
 }
 
+.image {
+    width: 100%;
+    float: left;
+    margin:auto;
+    line-height: 30px;
+}
+.image-right {
+    width: 0%;
+    float: right;
+    margin:auto;
+    line-height: 30px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+div.absolute {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 600px;
+    text-align: center;
+    margin:auto;
+    line-height: 30px;
+
+}
+div.absoluteleft {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    text-align: center;
+    margin:auto;
+    line-height: 30px;
+
+}
 nav {
     float: right;
     line-height: 100px;
@@ -82,6 +120,14 @@ nav a:hover {
     text-transform: uppercase;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: seagreen;
+}
+.contentarea {
+    color: mediumseagreen;
+    width: 100%;
+    position: relative;;
+    top: 500px;
+    background: white;
+    height: 500px;
 }
 
 .content-area {
