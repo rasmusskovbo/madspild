@@ -33,7 +33,7 @@ public class MyController {
 
     @GetMapping("/medlemskabInfo")
     public String medlemskabInfo() {
-        return "popup-window";
+        return "popup-anmodMedlemskab";
     }
 
     @PostMapping("/beskedIndsendt")
@@ -50,7 +50,7 @@ public class MyController {
         model.addAttribute("company", company);
         model.addAttribute("email", email);
         model.addAttribute("msg", msg);
-        return "medlemskabIndsendt";
+        return "popup-medlemskabIndsendt";
     }
 
 }

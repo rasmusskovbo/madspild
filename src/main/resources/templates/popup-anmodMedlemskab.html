@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Udfyld medlemskab</title>
+    <link rel="stylesheet" href="popupwindowstyle.css">
+</head>
+<body>
+
+
+<h1>Anmod om Medlemskab</h1>
+<form action="/medlemskabIndsendt" method="post">
+    <div class="overskrift">
+        <label for="company">Virksomhed</label>
+    </div>
+    <div class="tekstboks">
+        <input type="text" id="company" name="company" placeholder="Navn på Virksomhed.." required>
+    </div>
+    <div class="overskrift">
+        <label for="fnavn">Fulde navn</label>
+    </div>
+    <div class="tekstboks">
+        <input type="text" id="fnavn" name="name" placeholder="Dit fulde navn.." required>
+    </div>
+    <div class="overskrift">
+        <label for="email">E-mail</label>
+    </div>
+    <div class="tekstboks">
+        <input type="email" id="email" name="email" placeholder="Din e-mail adresse.." required>
+    </div>
+    <div class="overskrift">
+        <label for="besked">Evt. Besked</label>
+    </div>
+    <div class="tekstboks">
+        <textarea id="besked" name="msg" placeholder="Indtast besked..." style="max-height:90px; max-width: 80%; min-width: 80%"></textarea>
+    </div>
+    <input type="submit" onclick="window.close()" value="Annuller">
+    <input type="submit" onclick="return confirm('Send anmodning?')" value="Send">
+</form>
+</body>
+</html>

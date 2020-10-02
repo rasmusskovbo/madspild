@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Arial Black", serif;
+    font-family: "Arial Black", sans-serif;
 }
 
 body {
@@ -24,60 +24,12 @@ header {
     position: fixed;
 }
 
-.white-bar {
-    top: 100px;
-    width: 100%;
-    position: fixed;
-    background: white;
-    height: 40px;
-}
-
 .logo{
     width: 25%;
     height: 100px;
     float: left;
 }
 
-.image {
-    width: 100%;
-    padding-top: 7%;
-    float: left;
-    margin:auto;
-    line-height: 30px;
-}
-.image-right {
-    width: 0%;
-    padding-top: 7%;
-    float: right;
-    margin:auto;
-    line-height: 30px;
-}
-
-.column {
-    float: left;
-    width: 50%;
-}
-
-div.absolute {
-    position: absolute;
-    top: 100px;
-    right: 100px;
-    width: 600px;
-    text-align: center;
-    margin:auto;
-    line-height: 30px;
-
-}
-div.absoluteleft {
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 600px;
-    text-align: center;
-    margin:auto;
-    line-height: 30px;
-
-}
 nav {
     float: right;
     line-height: 100px;
@@ -123,6 +75,15 @@ nav a:hover {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: seagreen;
 }
+
+.white-bar {
+    top: 100px;
+    width: 100%;
+    position: fixed;
+    background: white;
+    height: 40px;
+}
+
 .contentarea {
     color: mediumseagreen;
     width: 100%;
@@ -133,20 +94,28 @@ nav a:hover {
 }
 
 .content-area {
-    color: mediumseagreen;
     width: 100%;
     position: relative;
     top: 500px;
     background: white;
     height: auto;
-    padding: 30px 0px;
+    padding: 30px 0;
 }
 
 .content-area h2 {
     color: mediumseagreen;
     letter-spacing: 4px;
     font-size: 3vw;
-    margin: 0;
+
+}
+
+.content-area h3 {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.content-area h4{
+    font-size: 1.8vw;
 }
 
 .content-area p {
@@ -157,18 +126,43 @@ nav a:hover {
     font-size: 1.5vw;
     margin-right: 15%;
     margin-left: 15%;
-    text-align: center;
-}
-
-.content-area h3 {
-    font-size: 40px;
-    padding: 30px;
+    text-align: justify;
 }
 
 .noncontent-area-mid {
     width: 100%;
     height: 200px;
     background: none;
+}
+
+.column{
+    height: 300px;
+}
+
+.image-left{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.text-right{
+    float: right;
+    width: 50%;
+}
+
+.image-right{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.text-left{
+    float: left;
+    width: 50%;
+}
+
+.text-right p, .text-left p {
+    font-size: 1.4vw;
 }
 
 * {
@@ -203,20 +197,19 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.overskrift {
+.headline {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
 
-.tekstboks {
+.textbox {
     float: left;
     width: 50%;
     margin-top: 6px;
 }
 
-/* Clear floats after the columns */
-.række:after {
+.row:after {
     content: "";
     display: table;
     clear: left;
@@ -258,23 +251,4 @@ input[type=submit]:hover {
     color: white;
     font-size: 0.75vw;
     letter-spacing: 1px;
-}
-
-.advice-header {
-    margin-top: 0px;
-    padding-bottom: 20px;
-    font-weight: normal;
-
-}
-
-.advice-list {
-    text-align: left;
-    padding: 0px 50px;
-    margin: auto;
-    width: 80%;
-
-}
-
-.advice-list li {
-    padding: 7px 0px;
 }

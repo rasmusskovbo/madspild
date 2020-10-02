@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Arial Black", serif;
+    color: black;
 }
 
 body {
@@ -32,12 +33,12 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.overskrift {
+.headline {
     color: mediumseagreen;
     margin-top: 30px;
 }
 
-.tekstboks {
+.textbox {
     margin-top: 6px;
 }
 
@@ -47,20 +48,21 @@ h1 {
     color: mediumseagreen;
 }
 
+h2 {
+    text-decoration: underline;
+    color: mediumseagreen;
+    padding: 15px;
+    font-size: 20px ;
+}
+
+
 p, a{
-    color: forestgreen;
     overflow-wrap: break-word;
     text-align: center;
     padding-bottom: 15px;
 }
 
-.række {
+.row {
     padding: 10px 15px 10px 15px;
     position: center;
-}
-
-h2 {
-    text-decoration: underline;
-    color: mediumseagreen;
-    padding: 15px;
 }

@@ -33,44 +33,44 @@
             <h2>Kontakt os</h2>
         </div>
     </div>
-    <div class="white-bar"></div>
 </div>
+<div class="white-bar"></div>
 
 <div class="content-area" style="padding-bottom: 4%">
     <div class="wrapper">
-        <h3 style="padding-top: 1%">Kontakt os</h3>
+        <h2>Kontakt os</h2>
         <div class="contact-info">
             <h2>Adresse<br></h2><p>lygten 37, 2400 København NV</p>
             <h2>Telefon<br></h2><p>+45 46 46 07 00</p>
             <h2>E-mail<br></h2><p>Info@danmarkmodmadspild.dk</p>
         </div>
         <form action="/beskedIndsendt" method="post">
-            <div class="række">
-                <div class="overskrift">
+            <div class="row">
+                <div class="headline">
                     <label for="fnavn">Fulde navn</label>
                 </div>
-                <div class="tekstboks">
+                <div class="textbox">
                     <input type="text" id="fnavn" name="fuldeNavn" placeholder="Dit fulde navn.." required>
                 </div>
             </div>
 
-            <div class="række">
-                <div class="overskrift">
+            <div class="row">
+                <div class="headline">
                     <label for="email">E-mail</label>
                 </div>
-                <div class="tekstboks">
+                <div class="textbox">
                     <input type="email" id="email" name="email" placeholder="Din e-mail adresse.." required>
                 </div>
             </div>
-            <div class="række">
-                <div class="overskrift">
+            <div class="row">
+                <div class="headline">
                     <label for="besked">Besked</label>
                 </div>
-                <div class="tekstboks">
+                <div class="textbox">
                     <textarea id="besked" name="besked" placeholder="Indtast besked..." style="max-height:90px" required></textarea>
                 </div>
             </div>
-            <div class="række">
+            <div class="row">
                 <input type="submit" onclick="return confirm('Send besked?')" value="Send">
             </div>
         </form>
