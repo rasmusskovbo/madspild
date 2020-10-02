@@ -40,12 +40,14 @@ header {
 
 .image {
     width: 100%;
+    padding-top: 7%;
     float: left;
     margin:auto;
     line-height: 30px;
 }
 .image-right {
     width: 0%;
+    padding-top: 7%;
     float: right;
     margin:auto;
     line-height: 30px;
