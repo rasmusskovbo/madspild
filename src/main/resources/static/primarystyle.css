@@ -18,7 +18,7 @@ body {
 
 header {
     height: 100px;
-    background: mediumseagreen;
+    background: #26734d;
     width: 100%;
     z-index: 99;
     position: fixed;
@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    color: forestgreen;
+    color: #206040;
 }
 
 .dividers {
@@ -73,7 +73,7 @@ nav a:hover {
     color: white;
     text-transform: uppercase;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: seagreen;
+    -webkit-text-stroke-color: #206040;
 }
 
 .white-bar {
@@ -85,7 +85,7 @@ nav a:hover {
 }
 
 .contentarea {
-    color: mediumseagreen;
+    color: #26734d;
     width: 100%;
     position: relative;;
     top: 500px;
@@ -94,6 +94,7 @@ nav a:hover {
 }
 
 .content-area {
+    color: #26734d;
     width: 100%;
     position: relative;
     top: 500px;
@@ -103,18 +104,20 @@ nav a:hover {
 }
 
 .content-area h2 {
-    color: mediumseagreen;
+    color: #206040;
     letter-spacing: 4px;
     font-size: 3vw;
 
 }
 
 .content-area h3 {
+    color: #206040;
     font-size: 40px;
     padding: 30px;
 }
 
 .content-area h4{
+    color: #206040;
     font-size: 1.8vw;
 }
 
@@ -184,7 +187,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #26734d;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -194,7 +197,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #206040;
 }
 
 .headline {
@@ -224,7 +227,7 @@ input[type=submit]:hover {
     font-size: 1.2vw;
     padding-top: 0;
     text-transform: uppercase;
-    color: darkgreen;
+    color: #206040;
 }
 
 .contact-info p{
@@ -244,7 +247,7 @@ input[type=submit]:hover {
     text-align: center;
     margin: auto;
     line-height: 30px;
-    background-color: mediumseagreen;
+    background-color: #26734d;
 }
 
 .footer p{
