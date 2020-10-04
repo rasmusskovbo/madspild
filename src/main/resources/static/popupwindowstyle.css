@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: "Arial Black", serif;
-    color: black;
 }
 
 body {
@@ -20,17 +19,18 @@ input[type=text], select, textarea, input[type=email] {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #26734d;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     position: center;
+    margin-top: 20px;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color:#206040;
 }
 
 .headline {
@@ -45,14 +45,14 @@ input[type=submit]:hover {
 h1 {
     font-size: 30px;
     padding: 10px;
-    color: mediumseagreen;
+    color: #206040;
 }
 
 h2 {
     text-decoration: underline;
-    color: mediumseagreen;
     padding: 15px;
-    font-size: 20px ;
+    font-size: 20px;
+    color: #206040;
 }
 
 
